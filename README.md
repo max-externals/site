@@ -10,17 +10,13 @@ nav_order: 1
 
 Short description of the project
 
-```C
-void *r_outlet1;
-void *r_outlet2;
-void *r_outlet3;
-```
-
 ```c
 void *r_outlet1;
 void *r_outlet2;
 void *r_outlet3;
 ```
+
+bla bla
 
 ```js
 // Javascript code with syntax highlighting.
