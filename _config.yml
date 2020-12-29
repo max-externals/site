@@ -4,3 +4,7 @@ search_enabled: true
 aux_links:
   "View on GitHub":
     - "//github.com/max-externals/site"
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true

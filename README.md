@@ -15,6 +15,5 @@ Short description of the project
     void        *r_outlet1;		// outlet creation - inlets are automatic, but objects must "own" their own outlets
     void        *r_outlet2;		// outlet creation - inlets are automatic, but objects must "own" their own outlets
     void        *r_outlet3;		// outlet creation - inlets are automatic, but objects must "own" their own outlets
-
 ```
 
