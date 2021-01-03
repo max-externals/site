@@ -1,6 +1,6 @@
 ---
 title: The sdk
-permalink: / The sdk
+permalink: /sdk
 nav_order: 2
 ---
 
