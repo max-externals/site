@@ -1,6 +1,6 @@
 ---
-title: Max/MSP Externals
-permalink: /
+title: The sdk
+permalink: / The sdk
 nav_order: 2
 ---
 
@@ -21,11 +21,11 @@ You can find the latest documentation of the sdk here: [API documentation](https
 The SDK documentation is accompanied by a series of projects for compiling some example Max external objects. 
 When you build the example projects, the resulting Max external will be located in a folder called "externals" at the top level of the SDK package.
 
-## testing
+## Testing
 
 It is highly recommended that you test your code thoroughly. One option is use the [max-test](https://github.com/Cycling74/max-test) package.
 
-## support
+## Support
  
 For support, please use the developer forums at: [max forum](http://cycling74.com/forums/)
 
