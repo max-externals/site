@@ -24,7 +24,7 @@ Max has an extensive API for developing new objects in C. You can find the lates
 ---
 title: Introduction
 permalink: /
-nav_order: 1
+nav_order: 2
 ---
 
 Syntax Highlighting example
