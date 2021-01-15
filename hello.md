@@ -6,11 +6,11 @@ nav_order: 3
 
 # Your first Max/MSP object
 
-The objects developed in this Max/MSP externals repository always have the prefix "meg.", that stands for Max Externals Guide. It is a good rule to give your objects a personal prefix (different from those of other Max libraries) to distinguish them from the native objects.
+The objects developed in the max-externals repository always have the prefix "meg.", that stands for Max Externals Guide. It is a good rule to give your objects a personal prefix (different from those of other Max libraries) to distinguish them from the native objects.
 
-Here we cerate an object called [ meg.hello ]. This object counts the number of "bangs" it receives form its first inlet outputting this number from its outlet. At the same time it posts in the Max console how many times you said the so much loved "Hello World".  
+Here we create an object called [ meg.hello ]. This object counts the number of "bangs" it receives form its first inlet outputting this number from its outlet. At the same time it posts in the Max console how many times you said the so much loved "Hello World".  
 
-![](https://raw.githubusercontent.com/max-externals/site/main/media/meg.hello_video.gif)
+![(https://raw.githubusercontent.com/max-externals/site/main/media/meg.hello_video.gif)]
 
 
 ## Import the SDK
