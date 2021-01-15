@@ -19,11 +19,11 @@ The main sections that compose the native Max/MSP ecosystem can be listed as fol
 
 1. Max: this section covers all the concepts connected to the processing of control data streams (not audio signals).   
 
-2. MSP section: this section covers all the concepts connected to the processing of audio data streams (audio signals).   
+2. MSP: this section covers all the concepts connected to the processing of audio data streams (audio signals).   
 
-3. Jitter section: this section covers all the concepts connected to the image/video processing.  
+3. Jitter: this section covers all the concepts connected to the image/video processing.  
 
-5. Gen section: this is an extension of the Max patching environment that converts what you build visually into efficient compiled code.
+5. Gen: this is an extension of the Max patching environment that converts what you build visually into efficient compiled code.
 
 4. Node section: this is an extension that allows the integration of the nodeJS world into the Max/MSP environment.
 
