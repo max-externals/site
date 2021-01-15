@@ -4,4 +4,13 @@ permalink: /workspace
 nav_order: 3
 ---
 
-TODO AM
+# Setup workspace
+
+## Windows
+tdb
+
+### Setup SDK
+tdb
+### Generate project
+
+## OS X
