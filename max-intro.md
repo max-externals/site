@@ -13,9 +13,11 @@ A general definition of the environment
 
 ### MSP
 
-### Jitter
-
 ### Node
+
+### gen / gen~ / "pseudocodice"
+
+### Jitter
 
 
 ## The Max/MSP visual programming environment
@@ -30,7 +32,9 @@ A general definition of the environment
 
 ### Max Object
 
-### MSP Object
+### MSP Object "~"
+- riceive two types of 
+
 
 
 ## Connections (patch cords)
@@ -38,6 +42,13 @@ A general definition of the environment
 ### Audio Signal
 
 ### Control signal 
+
+### Data Type of control signal
+
+
+
+## Using libraries
+- citare alcune librerie famose
 
 
 
