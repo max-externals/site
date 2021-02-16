@@ -2,6 +2,9 @@
 /**
  * oggetto che presenta 2 inlet: uno intero e uno float;
  * e passa i dati a 2 output: uno intero e uno float
+ * 
+ * https://cycling74.com/sdk/max-sdk-8.0.3/html/group__atom.html#ga8aa6700e9f00b132eb376db6e39ade47
+ * 
  */
 
 #include "ext.h"
@@ -13,6 +16,8 @@ typedef struct _inout
     
     void *outlet1_int;
     void *outlet2_double;
+    void *outlet3_bang;
+    void *outlet4_string;
 
 } t_inout;
 
@@ -22,7 +27,9 @@ void *inout_new();
 // +--o---o----+
 
 void inlet_left_int(t_inout *x, long n); // inlet left-most
-void inlet_left_float(t_inout *x, double n); // inlet right
+void inlet_left_bang(t_inout *x); // bang left-most
+void inlet_left_sym(t_inout *x, t_symbol *s); // sym left-most
+void inlet_right_float(t_inout *x, double n); // inlet right
 
 static t_class *inout_class;
 
@@ -39,7 +46,9 @@ void ext_main(void *r)
     // i TIPED METHOD sono quelli in cui Max controlla il tipo di ogni atom in un messaggio per controllare la consistenza con ciò che si aspetta di ottenere
 
     class_addmethod(c, (method)inlet_left_int, "int", A_LONG, 0); // left most inlet - A_LONG dice che la funzione accetta un intero long e lo zero successivo termina la lista degli argomenti.
-    class_addmethod(c, (method)inlet_left_float, "ft1", A_FLOAT, 0); // right most inlet
+    class_addmethod(c, (method)inlet_left_bang, "bang", 0); 
+    class_addmethod(c, (method)inlet_left_sym, "sym", A_SYM, 0); 
+    class_addmethod(c, (method)inlet_right_float, "float", A_FLOAT, 0); // right most inlet
     
     class_register(CLASS_BOX, c);
     
@@ -53,11 +62,13 @@ void *inout_new()
     
     // first inlet is created by default
     // creo il secondo inlet che accetta float
-    floatin(x,1);
+    // floatin(x,1);
 
     // l'ordine con cui vengono qui creati definisce l'ordine degli outlet dell'oggetto in Max
     // il "più in alto" è il "più a destra"
-    x->outlet2_double = floatout((t_object *)x); // equivale a: outlet_new((t_object *)x, "int");
+    x->outlet4_string = outlet_new((t_object *)x,NULL);
+    x->outlet3_bang = bangout((t_object *)x);
+    x->outlet2_double = floatout((t_object *)x); // equivale a: outlet_new((t_object *)x, "float");
     x->outlet1_int = intout((t_object *)x); // equivale a: outlet_new((t_object *)x, "int");
     
     // per generico outlet: x->m_outlet2 = outlet_new((t_object *)x, NULL); // con NULL possiamo mandare fuori qualsiasi tipo
@@ -68,6 +79,14 @@ void inlet_left_int(t_inout *x, long n){
     outlet_int(x->outlet1_int, n);
 }
 
-void inlet_left_float(t_inout *x, double n) {
+void inlet_right_float(t_inout *x, double n) {
     outlet_float(x->outlet2_double,n);
+}
+
+void inlet_left_bang(t_inout *x) {
+    outlet_bang(x->outlet3_bang);
+}
+
+void inlet_left_sym(t_inout *x, t_symbol *s) {
+    outlet_anything(x->outlet4_string,s,0,NIL);
 }
