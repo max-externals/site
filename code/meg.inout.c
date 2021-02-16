@@ -49,11 +49,6 @@ void ext_main(void *r)
     
     c = class_new("meg.inout", (method)inout_new, (method)NULL,  (long)sizeof(t_inout), 0L, 0);
     
-    // ogni simbolo in max è unico e contiene una stringa e un valore. 
-    // Il dato del messaggio è passato come array di atoms (t_atom), una struttura che può contenere interi, float, o anche pointers, identificati da un tag.
-    // i tipi possibili sono: A_LONG - A_FLOAT - A_SYM - A_GIMME; quest'ultimo passa la lista ti atoms
-    // i TIPED METHOD sono quelli in cui Max controlla il tipo di ogni atom in un messaggio per controllare la consistenza con ciò che si aspetta di ottenere
-
     /**
      * we add the methods to the object class c
      * the third parameter defines the message selector:
@@ -61,6 +56,7 @@ void ext_main(void *r)
      * float : if the inlet receives an float it invokes the method inlet_float (A_FLOAT says that the function accepts an float; 0 is the end of the list of arguments)
      * bang : if the inlet receives a bang it invokes the method inlet_bang (no data after bang)
      * sum : if the inlet receives the keyword sym, it invoke the method inlet_sym (A_SYM says that the function accepts an symbol; 0 is the end of the list of arguments)
+     * list : if the inlet receives the keyword list, it invoke the method inlet_list (A_GIMME is a list of t_atoms)
      * assist : it is a method that is invoked with the overlay on the inlets or outlets (A_CANT means that no data are passed to the function)
     */
     class_addmethod(c, (method)inlet_int, "int", A_LONG, 0); 
@@ -107,6 +103,7 @@ void assist(t_inout *x, void *b, long m, long a, char *s)
             case 1: sprintf(s, "I am outlet float"); break;
             case 2: sprintf(s, "I am outlet bang"); break;
             case 3: sprintf(s, "I am outlet sym"); break;
+            case 4: sprintf(s, "I am outlet list"); break;
         }
         
     }
