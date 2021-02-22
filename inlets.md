@@ -1,8 +1,8 @@
 
 ---
-title: Hello object
-permalink: /hello
-nav_order: 3
+title: Inlets/outlets basics
+permalink: /inlets-outlets
+nav_order: 4
 ---
 
 # Inlets/outlets basics
