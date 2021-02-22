@@ -41,6 +41,7 @@ The most important are:
 - A_FLOAT
 - A_SYM
 - A_GIMME
+
 The selection of the type has a direct impact on the signature of the trigger function.
 
 | Max Type | SDK Type   | Function paramenters                                  | Example                                                     | Params                                      |
@@ -98,7 +99,7 @@ Patchers execute faster when outlets are typed, since the message lookup can be 
 
 In our case:
 
-c```
+```c
     x->outlet5_list = listout((t_object *)x);
     x->outlet4_string = outlet_new((t_object *)x,NULL);
     x->outlet3_bang = bangout((t_object *)x);
