@@ -1,4 +1,3 @@
-
 ---
 title: Inlets/outlets basics
 permalink: /inlets-outlets
