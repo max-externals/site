@@ -17,25 +17,34 @@ Many objects are available natively in the software itself, but the Max/MSP ecos
 
 There is a large user base of programmers, unaffiliated with Cycling '74, who enhance the Max/MSP environment with commercial and non-commercial extensions and libraries. 
 
-The main sections that compose the **native Max/MSP ecosystem** can be listed as follow :   
+The main sections that compose the **native Max/MSP ecosystem** are: Max, MSP, Jitter, Gen, Node.    
 
- **Max** section: this covers all the concepts connected to the processing of **control data streams** (not audio signals). This section of the Max/MSP environment allows you to manage all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords**. 
+## Max section
 
-> The control signals in Max/MSP can be of the following **data types**:
+This section covers all the concepts connected to the processing of **control data streams** (not audio signals). This section of the Max/MSP environment allows you to manage all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords**. 
 
-> - **Integer Numbers**: positive and negative integer numbers. Integer type is indicated by the letter i.
-> - **Float Number**: real numbers, with 32bit precision. Float is indicated by the letter f.
-> - **Symbols**: alphanumeric string. Symbol is indicated with the letter s (or sym in some cases). 
-> - **Lists**: a list of symbols or numbers. List is indicated by the letter l. 
+The control signals in Max/MSP can be of the following **data types**:
+
+- **Integer Numbers**: positive and negative integer numbers. Integer type is indicated by the letter i.
+- **Float Number**: real numbers, with 32bit precision. Float is indicated by the letter f.
+- **Symbols**: alphanumeric string. Symbol is indicated with the letter s (or sym in some cases). 
+- **Lists**: a list of symbols or numbers. List is indicated by the letter l. 
   
-> **MSP** section: this covers all the concepts connected to the processing of **audio data streams** (audio signals).  
+## MSP section
+
+This section covers all the concepts connected to the processing of **audio data streams** (audio signals).  
  
-> **Jitter** section: this covers all the concepts connected to the **image/video/3D processing**.  
+## Jitter section
 
-> **Gen**: this is an extension of the Max patching environment that converts what you build visually into **efficient compiled code**.
+This section covers all the concepts connected to the **image/video/3D processing**.  
 
-> **Node** section: this is an extension that allows the integration of the **nodeJS environment** into the Max/MSP environment.
+## Gen section
 
+This section is an extension of the Max patching environment that converts what you build visually into **efficient compiled code**.
+
+## Nodes section 
+
+This section is an extension that allows the integration of the **nodeJS environment** into the Max/MSP environment.
 
 
 ## The Max/MSP visual programming environment
