@@ -21,7 +21,7 @@ The main sections that compose the **native Max/MSP ecosystem** are: Max, MSP, J
 
 ## Max section
 
-This section covers all the concepts connected to the processing of **control data streams** (not audio signals). This section of the Max/MSP environment allows you to manage all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords**. 
+This section covers all the concepts connected to the processing of **control data streams**, managing all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords**. 
 
 The control signals in Max/MSP can be of the following **data types**:
 
