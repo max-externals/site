@@ -21,7 +21,7 @@ The main sections that compose the **native Max/MSP ecosystem** are: Max, MSP, J
 
 ## Max section
 
-This section covers all the concepts connected to the processing of **control data streams**, managing all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords**. 
+This section covers all the concepts connected to the processing of **control data streams**, managing all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords** (by default). 
 
 ![image](https://github.com/max-externals/site/blob/main/media/es_1_max.png)
 
@@ -34,7 +34,11 @@ The control signals in Max/MSP can be of the following **data types**:
   
 ## MSP section
 
-This section covers all the concepts connected to the processing of **audio data streams** (audio signals).  
+This section covers all the concepts connected to the processing of **audio data streams** (audio signals).  An audio signal is a **Float number** (32bit precision). In the Max/MSP environment **audio signals** can be passed and transmitted between objects only if the DSP (audio processing) is enabled, unlike control signals, which are always active. The objects (functions) that act on these signals are connected to each other with a **segmented patch chords** (yellow and black by default). 
+
+![image](https://github.com/max-externals/site/blob/main/media/es_2_msp.png)
+
+An audio signal is a discrete time function (defined by samples at the rate of the sampling frequency: the Sample Rate) and can be used to represent both waveforms and any other time-varying numerical parameter, as well as constants.
  
 ## Jitter section
 
