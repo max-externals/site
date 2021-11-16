@@ -21,7 +21,7 @@ The main sections that compose the **native Max/MSP ecosystem** are: Max, MSP, J
 
 ## Max section
 
-This section covers all the concepts connected to the processing of **control data streams**, managing all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords** (by default). 
+The Max section covers all the concepts connected to the processing of **control data streams**, managing all data that are not audio signals or image matrices. The signals handled by this section are called **control signals**. The objects (functions) that act on these signals are connected to each other with **gray patch chords** (by default). 
 
 ![image](https://github.com/max-externals/site/blob/main/media/es_1_max.png)
 
@@ -34,7 +34,7 @@ The control signals in Max/MSP can be of the following **data types**:
   
 ## MSP section
 
-This section covers all the concepts connected to the processing of **audio data streams** (audio signals).  An audio signal is a **Float number** (32bit precision). In the Max/MSP environment **audio signals** can be passed and transmitted between objects only if the DSP (audio processing) is enabled, unlike control signals, which are always active. The objects (functions) that act on these signals are connected to each other with a **segmented patch chords** (yellow and black by default). 
+The MSP section covers all the concepts connected to the processing of **audio data streams** (audio signals).  An audio signal is a **Float number** (32bit precision). In the Max/MSP environment **audio signals** can be passed and transmitted between objects only if the DSP (audio processing) is enabled, unlike control signals, which are always active. The objects (functions) that act on these signals always have a name ending with a tilde symbols (~) and they are connected to each other with a **segmented patch chords** (yellow and black by default). 
 
 ![image](https://github.com/max-externals/site/blob/main/media/es_2_msp.png)
 
@@ -42,7 +42,13 @@ An audio signal is a discrete time function (defined by samples at the rate of t
  
 ## Jitter section
 
-This section covers all the concepts connected to the **image/video/3D processing**.  
+The Jitter section covers all the concepts connected to the **image/video/3D processing**. The data type used in this section is the jitter matrix. A matrix is a grid, with each location in the grid containing some information. The value in each cell of the matrix can be stored in various ways: char, long, float32, or float64. In Jitter, a matrix can have any number of dimensions from 1 to 32. Each mtrix has also a specific number of planes, which represents the amount of values that can be written in a cell. A one-dimensional matrix is comparable to a normal Array. 
+
+A black and white image is a typical two-dimensional one-plane matrix, where each cell represents the grayscale value to be associated with that pixel. 
+
+![image](https://github.com/max-externals/site/blob/main/media/es_3_jitter.png)
+
+The objects (functions) that act on matrixes always have a name starting with the prefix .jit and they are connected to each other with a **segmented patch chords** (green and black by default). 
 
 ## Gen section
 
