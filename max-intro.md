@@ -42,7 +42,7 @@ An audio signal is a discrete time function (defined by samples at the rate of t
  
 ## Jitter section
 
-The Jitter section covers all the concepts connected to the **image/video/3D processing**. The data type used in this section is the jitter matrix. A matrix is a grid, with each location in the grid containing some information. The value in each cell of the matrix can be stored in various ways: char, long, float32, or float64. In Jitter, a matrix can have any number of dimensions from 1 to 32. Each mtrix has also a specific number of planes, which represents the amount of values that can be written in a cell. A one-dimensional matrix is comparable to a normal Array. 
+The Jitter section covers all the concepts connected to the **image/video/3D processing**. The data type used in this section is the jitter matrix. A matrix is a grid, with each location in the grid containing some information. The value in each cell of the matrix can be stored in various ways: char, long, float32, or float64. In Jitter, a matrix can have any number of dimensions from 1 to 32. Each matrix has also a specific number of planes, which represents the amount of values that can be written in a cell. A one-dimensional matrix is comparable to a normal Array. 
 
 A black and white image is a typical two-dimensional one-plane matrix, where each cell represents the grayscale value to be associated with that pixel. 
 
