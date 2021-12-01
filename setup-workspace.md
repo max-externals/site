@@ -9,10 +9,12 @@ nav_order: 3
 # Setup workspace
 
 ## Windows
-Define windows requirement
+
 
 ### Tools
-Tools needed, Visual Studio  https://visualstudio.microsoft.com/vs/community/
+Tools needed:
+- Visual Studio  https://visualstudio.microsoft.com/vs/community/
+- Visual Studio
 
 ### Setup SDK
 How to download, where to place files etc

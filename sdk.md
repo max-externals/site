@@ -14,12 +14,12 @@ It additionally includes documentation of the API and example projects using the
 
 ## Download and place the SDK 
 
-You can download the SDK here: [download sdk 8.0.3](https://cycling74.com/downloads/sdk). 
+You can download the SDK here: [download sdk 8.2.0](https://cycling74.com/downloads/sdk). 
 The SDK is structured as a Max package. Simply place the SDK in your `Max/Packages` folder to begin working.
 
 ## Online API documentation
 
-You can find the latest online documentation of the SDK here: [API documentation](https://cycling74.com/sdk/max-sdk-8.0.3/html/index.html).
+You can find the latest online documentation of the SDK here: [API documentation](https://cycling74.com/sdk/max-sdk-8.2.0/).
 The SDK documentation is accompanied by a series of projects for compiling some example Max/MSP external objects. 
 When you build the example projects, the resulting Max external will be located in a folder called "externals" at the top level of the SDK package.
 
