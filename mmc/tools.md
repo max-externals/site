@@ -1,6 +1,7 @@
 ---
 title: Tools
 permalink: /mmc/tools
+parent: Meet Music Code
 nav_order: 1
 ---
 
@@ -13,7 +14,12 @@ Per partecipare al workshop sara' necessario avere preinstallato sul proprio com
 ## Windows
 
 ### Programmi
-- [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) necessario per avere tutti gli strumenti di sviluppo in ambiente windows, eseguire l'installer e selezionare le opzioni come nell'immagine
+- [Build Tools for Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022) necessario per avere tutti gli strumenti di sviluppo in ambiente windows, eseguire l'installer e selezionare le opzioni:
+    - Desktop development with C++
+        - MSVC
+        - Windows 10 SDK
+        - C++ CMake
+        - Clang
 
 ![VS Build Tools](https://raw.githubusercontent.com/max-externals/site/main/media/VSBuildTools.PNG)
 
@@ -31,6 +37,7 @@ Per partecipare al workshop sara' necessario avere preinstallato sul proprio com
 ## Set-up Visual Studio Code
 
 Durante il workshop inoltre useremo le estensioni C/C++ per Visual Studio Code [https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack)
-Per installarla aprire Visual Studio Code e aprire le estensioni  e cercare `c/c++ extension pack` selezionare il primo elemento e installarlo
+
+Per installarla aprire Visual Studio Code, aprire le estensioni, cercare `c/c++ extension pack` e selezionare il primo elemento
 
 ![Install C++ Extension](https://raw.githubusercontent.com/max-externals/site/main/media/vs_code_cpp_extension.png)
